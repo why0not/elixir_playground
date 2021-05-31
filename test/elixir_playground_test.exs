@@ -17,4 +17,12 @@ defmodule ElixirPlaygroundTest do
   test "Thirty seven" do
     assert ElixirPlayground.fibonnaci(37) == 24157817
   end
+
+  test "abba dancing queen" do
+    assert ElixirPlayground.first("abba dancing queen") == "d"
+  end
+
+  test "kapak" do
+    assert Elixir.ElixirPlayground.first("kapak") == "p"
+  end
 end
