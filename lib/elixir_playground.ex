@@ -1,18 +1,5 @@
 defmodule ElixirPlayground do
-  @moduledoc """
-  Documentation for `ElixirPlayground`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> ElixirPlayground.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  def fibonnaci(0), do: 0
+  def fibonnaci(1), do: 1
+  def fibonnaci(n), do: fibonnaci(n-2) + fibonnaci(n-1)
 end
