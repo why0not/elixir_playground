@@ -25,4 +25,24 @@ defmodule ElixirPlaygroundTest do
   test "kapak" do
     assert Elixir.ElixirPlayground.first("kapak") == "p"
   end
+
+  test "valencia" do
+    assert ElixirPlayground.first("valencia") == "v"
+  end
+
+  test "beers" do
+    assert ElixirPlayground.frequencies("abba AbbA ipa lela iPa IPA lEla") == %{
+                                                                        "abba" => 2,
+                                                                        "ipa" => 3,
+                                                                        "lela" => 2
+                                                                      }
+  end
+
+  test "foobar" do
+    assert ElixirPlayground.frequencies("foo bar baz BaR FOO") == %{
+                                                            "foo" => 2,
+                                                            "bar" => 2,
+                                                            "baz" => 1
+                                                          }
+  end
 end
