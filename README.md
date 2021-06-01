@@ -5,6 +5,7 @@
 ## Instructions
 
 Download repo and start it with `iex -S mix`, also if needed run `mix deps.get`.
+Run tests with `mix test`.
 
 
 ## Functionalities
